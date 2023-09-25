@@ -1,5 +1,7 @@
-﻿  GameManager.cpp
-  Main.cpp
-  SpaceShip.cpp
-  Generating Code...
+﻿  Projectile.cpp
+Z:\Ragul\CPP_Projects\SpaceShooters\src\Projectile.cpp(9,49): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
   SpaceShooters.vcxproj -> Z:\Ragul\CPP_Projects\SpaceShooters\x64\Debug\SpaceShooters.exe

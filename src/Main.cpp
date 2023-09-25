@@ -1,13 +1,12 @@
-#include "../headers/GameManager.h"
+#include "../headers/Game.h"
 #include "SFML/Main.hpp"
 using namespace sf;
 
 int main()
 {
-    GameManager gameManager;
-    gameManager.Run();
+    Game game;
+    game.Run();
     
    
-
     return 0;
 }

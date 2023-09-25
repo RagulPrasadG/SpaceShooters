@@ -21,6 +21,11 @@ bool GameWindow::PollEvent(sf::Event& event)
     return window->pollEvent(event);
 }
 
+sf::RenderWindow* GameWindow::GetWindow()
+{
+    return window;
+}
+
 void GameWindow::Draw(sf::Sprite sprite)
 {
     window->draw(sprite);

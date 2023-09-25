@@ -19,15 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\GameManager.cpp" />
+    <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\GameWindow.cpp" />
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\SpaceShip.cpp" />
+    <ClCompile Include="src\Projectile.cpp" />
+    <ClCompile Include="src\PlayerShip.cpp" />
+    <ClCompile Include="src\ProjectilePool.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\GameManager.h" />
+    <ClInclude Include="headers\Game.h" />
     <ClInclude Include="headers\GameWindow.h" />
-    <ClInclude Include="headers\SpaceShip.h" />
+    <ClInclude Include="headers\Projectile.h" />
+    <ClInclude Include="headers\PlayerShip.h" />
+    <ClInclude Include="headers\ProjectilePool.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\assets\ShipImage.png" />

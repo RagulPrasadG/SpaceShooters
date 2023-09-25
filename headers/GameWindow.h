@@ -8,7 +8,7 @@ class GameWindow
 public:
 	const static int WIDTH = 800;
 	const static int HEIGHT = 600;
-	sf::RenderWindow* window;
+
 	void Update();
 	GameWindow();
 	void DestroyWindow();
@@ -18,7 +18,9 @@ public:
 	void Draw(sf::Sprite sprite);
 	bool isOpen();
 	bool PollEvent(sf::Event& event);
+	sf::RenderWindow* GetWindow();
 
 private:
 	void CreateWindow();
+	sf::RenderWindow* window;
 };
