@@ -1,7 +1,15 @@
-﻿  Projectile.cpp
-Z:\Ragul\CPP_Projects\SpaceShooters\src\Projectile.cpp(9,49): warning C4305: 'argument': truncation from 'double' to 'T'
+﻿  EnemyPool.cpp
+Z:\Ragul\CPP_Projects\SpaceShooters\src\EnemyPool.cpp(22,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
+Z:\Ragul\CPP_Projects\SpaceShooters\src\EnemyPool.cpp(22,41): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Game.cpp
+  Main.cpp
+  Generating Code...
   SpaceShooters.vcxproj -> Z:\Ragul\CPP_Projects\SpaceShooters\x64\Debug\SpaceShooters.exe

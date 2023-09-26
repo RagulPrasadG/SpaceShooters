@@ -9,7 +9,7 @@ public:
 	const static int WIDTH = 800;
 	const static int HEIGHT = 600;
 
-	void Update();
+
 	GameWindow();
 	void DestroyWindow();
 	void Close();

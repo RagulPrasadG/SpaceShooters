@@ -19,19 +19,29 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Assets.cpp" />
+    <ClCompile Include="src\Enemy.cpp" />
+    <ClCompile Include="src\EnemyPool.cpp" />
+    <ClCompile Include="src\EnemyProjectile.cpp" />
+    <ClCompile Include="src\EnemyProjectilePool.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\GameWindow.cpp" />
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\Projectile.cpp" />
+    <ClCompile Include="src\PlayerProjectile.cpp" />
     <ClCompile Include="src\PlayerShip.cpp" />
-    <ClCompile Include="src\ProjectilePool.cpp" />
+    <ClCompile Include="src\PlayerProjectilePool.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\Assets.h" />
+    <ClInclude Include="headers\Enemy.h" />
+    <ClInclude Include="headers\EnemyPool.h" />
+    <ClInclude Include="headers\EnemyProjectile.h" />
+    <ClInclude Include="headers\EnemyProjectilePool.h" />
     <ClInclude Include="headers\Game.h" />
     <ClInclude Include="headers\GameWindow.h" />
-    <ClInclude Include="headers\Projectile.h" />
+    <ClInclude Include="headers\PlayerProjectile.h" />
     <ClInclude Include="headers\PlayerShip.h" />
-    <ClInclude Include="headers\ProjectilePool.h" />
+    <ClInclude Include="headers\PlayerProjectilePool.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\assets\ShipImage.png" />

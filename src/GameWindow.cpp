@@ -6,6 +6,7 @@ void GameWindow::CreateWindow()
     
 }
 
+
 GameWindow::GameWindow()
 {
     CreateWindow();

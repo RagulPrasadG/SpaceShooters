@@ -1,4 +1,6 @@
 #include "../headers/Game.h"
+#include "../headers/Assets.h"
+
 
 void Game::Init()
 {
@@ -7,7 +9,8 @@ void Game::Init()
     bgSprite.setPosition(sf::Vector2f(0,0));
     bgSprite.setScale(sf::Vector2f(bgSprite.getScale().x + 0.3f, bgSprite.getScale().y + 0.3f));
     gameWindow = new GameWindow();
-    spaceShip.CreateShip();
+    playerShip.CreateShip();
+    enemyPool.CreateEnemyPool();
 }
 
 void Game::Run()
@@ -28,37 +31,35 @@ void Game::Run()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
         {
-            spaceShip.MoveLeft(deltaTime);
+            playerShip.MoveLeft(deltaTime);
         }
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D))
         {
-            spaceShip.MoveRight(deltaTime);
+            playerShip.MoveRight(deltaTime);
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W))
-        {
-            spaceShip.MoveUp(deltaTime);
-        }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S))
+        playerShip.fireInterval += deltaTime;
+        enemyPool.fireInterval += deltaTime;
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && playerShip.fireInterval >= playerShip.fireRate)
         {
-            spaceShip.MoveDown(deltaTime);
-        }
-
-        spaceShip.fireInterval += deltaTime;
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Scancode::Space) && spaceShip.fireInterval >= spaceShip.fireRate)
-        {
-            spaceShip.Fire();
-            spaceShip.fireInterval = 0.f;
+            playerShip.Fire();
+            playerShip.fireInterval = 0.f;
         }
 
         deltaTime = time.asSeconds();
      
         gameWindow->Clear();
         gameWindow->Draw(bgSprite);
-        spaceShip.Draw(gameWindow->GetWindow());
-        spaceShip.projectilePool.Update(deltaTime);
+        playerShip.Draw(gameWindow->GetWindow());
+        playerShip.UpdatePlayerPlayerProjectiles(deltaTime);
+        if (enemyPool.fireInterval >= enemyPool.fireRate)
+        {
+            enemyPool.Fire();
+            enemyPool.fireInterval = 0;
+        }
+        enemyPool.Draw(gameWindow->GetWindow(),deltaTime);
         gameWindow->Display();
 
     }

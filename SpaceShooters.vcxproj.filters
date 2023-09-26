@@ -27,10 +27,25 @@
     <ClCompile Include="src\PlayerShip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Projectile.cpp">
+    <ClCompile Include="src\PlayerProjectile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\ProjectilePool.cpp">
+    <ClCompile Include="src\PlayerProjectilePool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Assets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EnemyPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EnemyProjectile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EnemyProjectilePool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,10 +59,25 @@
     <ClInclude Include="headers\PlayerShip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Projectile.h">
+    <ClInclude Include="headers\PlayerProjectile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\ProjectilePool.h">
+    <ClInclude Include="headers\PlayerProjectilePool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Assets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\EnemyPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\EnemyProjectile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\EnemyProjectilePool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

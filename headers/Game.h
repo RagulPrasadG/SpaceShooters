@@ -1,7 +1,8 @@
 #pragma once
 #include "../headers/GameWindow.h"
 #include "../headers/PlayerShip.h"
-#include "../headers/ProjectilePool.h"
+#include "../headers/PlayerProjectilePool.h"
+#include "../headers/EnemyPool.h"
 
 class Game
 {
@@ -14,7 +15,8 @@ public:
 	sf::Time time;
 	float deltaTime;
 	GameWindow* gameWindow;
-	PlayerShip spaceShip;
+	PlayerShip playerShip;
+	EnemyPool enemyPool;
 	void Init();
 	void Run();
 	void QuitGame();
